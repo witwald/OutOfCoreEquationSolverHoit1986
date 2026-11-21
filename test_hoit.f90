@@ -1,7 +1,7 @@
-! Test program for the Hoit (1986) blocked assembly routines and the
-! modified Wilson-Dovey solver SORED.
+! Test program for the Hoit (1986) blocked assembly routines and the modified
+! Wilson-Dovey solver SORED.
 !
-! Test A: the paper's own example - the two-bay, two-storey plane frame of
+! Test A: The paper's own example - the two-bay, two-storey plane frame of
 !         Figures 1-3 (18 equations, 10 elements, block size 25). Checks
 !         every intermediate array against the values printed in the paper:
 !         profile pointers (Fig. 1 profile), KA table and diagonal
@@ -10,7 +10,7 @@
 !         with a dense assembly, and the system is solved out-of-core
 !         (5 blocks, as in the figure) and in-core.
 !
-! Test B: a larger frame (3 bays x 15 storeys, 180 equations, 7 load cases)
+! Test B: A larger frame (3 bays x 15 storeys, 180 equations, 7 load cases)
 !         plus spring elements: a long-range spring (wide profile, varied
 !         "lowest connected block") and a spring whose two DOFs are the same
 !         equation (exercises ASEMBL's "ELEM HAS 2 DOF SAME" line). Element
@@ -21,7 +21,7 @@
 !         Displacements and the assembled mass vector are checked against a
 !         dense double-precision reference.
 !
-! Test C: the same model solved with separate calls KKK=3, 4, 5.
+! Test C: The same model solved with separate calls KKK=3, 4, 5.
 !
 program test_hoit
   implicit none

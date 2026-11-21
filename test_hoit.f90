@@ -22,7 +22,7 @@
 !         dense double-precision reference.
 !
 ! Test C: The same model solved with separate calls KKK=3, 4, 5.
-!
+
 program test_hoit
   implicit none
   ! ---- SIMPAL common blocks (must match the Fortran 77 routines) ----------
